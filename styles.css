@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+:root {
+    --colorDeFondo: rgb(30, 30, 30);
+    --colorFuente: #fff;
+    --colorGrey: rgb(40, 40, 40);
+}
+
+body {
+    background-color: var(--colorDeFondo);
+}
+
+
+
+.textWhitEllipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.elementOfCarrousel {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    width: 7em;
+    align-items: center;
+}
+
+.containerOfCarrousel {
+    display: flex;
+    gap: 1em;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.filtroBlanco {
+    fill: white;
+}
+
+.filtroGris {
+    fill: grey;
+}
+
+.lf__tagHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid var(--colorGrey);
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    background-color: var(--colorDeFondo);
+    z-index: 300;
+}
+
+.lf__tagHeader-container {
+    display: flex;
+    justify-content: center;
+}
+
+/*MAIN TAG*/
+.lf__tagMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-logo {
+    border: 3px solid var(--colorGrey);
+    border-radius: 50%;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+}
+
+.lf__tagHeader-container-element svg {
+    height: 1.5em;
+}
+
+.navbarMobile {
+    width: 100%;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    border: 2px solid var(--colorGrey);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--colorDeFondo);
+    z-index: 200;
+}
+
+.navbarMobile .lf__tagNav-container-element svg {
+    height: 1.5em;
+}
+
+/*MAIN TAG*/
+.lf__tagMain {
+    padding: 5em 1em 6em 1em;
+    color: var(--colorFuente);
+}
+
+.lf__tagMain-main {
+    padding: 1em 0 1em 0;
+}
+
+.lf__mainTag .lf__section_ResponsiveSmall section {
+    margin-bottom: 2em;
+}
+
+.lf__mainTag .lf__section_responsiveSmall-favourites {
+    max-width: 100%;
+    margin: 2em 0 2em 0;
+}
+
+.lf__section_responsiveSmall-favourites-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 4em);
+    gap: 1em;
+}
+
+.lf__section_responsiveSmall-favourites-container button {
+    background-color: transparent;
+    border: none;
+}
+
+.lf__section_responsiveSmall-favourites-container a {
+    text-decoration: none;
+    color: var(--colorFuente);
+    text-align: left;
+}
+
+.lf__elementOfFavourites {
+    background-color: var(--colorGrey);
+    display: grid;
+    grid-template-columns: 4em 1fr;
+    border-radius: 5px;
+}
+
+.lf__elementOfFavourites-img img {
+    width: 4em;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.lf__elementOfFavourites-text {
+    width: 90%;
+    height: 100%;
+    grid-column: 2/3;
+    display: flex;
+    text-align: start;
+    padding: 0 0 0 .3em;
+    align-items: center;
+}
+
+.lf__section-otters {
+    margin: 1.5em 0 0 0;
+}
+
+.lf__section-otters-header {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+    padding: 0 0 1em 0;
+}
+
+.lf__section-otters-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.lf__section-otters-main .lf__otter-element {
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding: .5em;
+}
+
+.lf__section-otters-main .__otters-main-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lf__section-otters-main .__otters-main-header .header-userPic {
+    border: 2px solid var(--colorGrey);
+    border-radius: 50%;
+    padding: .1em;
+    width: min-content;
+}
+
+.lf__section-otters-main .__otters-main-header .header-userPic img {
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+}
+
+.lf__section-otters-main .__otters-main-header .header-userName {
+    display: flex;
+    gap: 5px;
+}
+
+.lf__section-otters-main .__otters-main-header .header-userName .nameInGrey {
+    color: grey;
+}
+
+.lf__section-otters-main .__otters-main-footer {
+    margin: .5em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lf__section-carrousels {
+    padding: 2em 0 0 0;
+}
+
+.lf__section-carrousels .lf__section-carrousels-header {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+
+.lf__section-carrousels .lf__section-carrousels-main img{
+    height: 10em;
+    width: 10em;
+    object-fit: cover;
+}
+
+.lf__section-carrousels .lf__section-carrousels-main .elementOfCarrousel{
+    margin: 1em .5em 0 .5em;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.lf__section-carrousels .lf__section-carrousels-main .elementOfCarrousel .textOfElement{
+    width: 9em;
+    text-align: left;
+    font-weight: bolder;
+}
+
+.lf__section-carrousels .lf__section-carrousels-main .elementOfCarrousel .textOfElement.artist-name{
+    color: gray;
+    font-weight: 100;
+}
+
+.lf__section-carrousels.top-artist .lf__section-carrousels-main img{
+    border-radius: 50%;
+}
+
+.lf__section-carrousels.top-artist .lf__section-carrousels-main .elementOfCarrousel .textOfElement{
+    text-align: center;
+    width: 100%;
+}
+
+.lf__section-card{
+    margin: 1em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.lf__section-card .card__header{
+    display: flex;
+    gap: .3em;
+    align-items: center;
+    
+}
+.lf__section-card .card__header .card__header-logo{
+    border: 2px solid var(--colorGrey);
+    border-radius: 50%;
+    width: 2.2em;
+    height: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lf__section-card .card__container .card button{
+    background-color: var(--colorDeFondo);
+    border: none;
+}
+
+.lf__section-card .card__container .card .card-img-overlay{
+    overflow-y: auto;
+    color: white;
+}
+
+.lf__card-text{
+    opacity: 0;
+}
+
+.lf__section-card .card__container .card__footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (width <=769px) {}
