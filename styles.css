@@ -17,8 +17,15 @@ body {
 
 body {
     background-color: var(--colorDeFondo);
+    overflow: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(58, 58, 58);
+}
 
 
 .textWhitEllipsis {
@@ -262,6 +269,15 @@ body {
     align-items: start;
 }
 
+.containerOfCarrousel .elementOfCarrousel .card img{
+    width: 100%;
+}
+
+.lf__containerOfCarrousel{
+    margin: 0 0 1em 0;
+    overflow-x:auto;
+}
+
 .lf__section-carrousels .lf__section-carrousels-main .elementOfCarrousel .textOfElement{
     width: 9em;
     text-align: left;
@@ -487,5 +503,8 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1em;
+    }
+    .lf__footerTag{
+        grid-column: 3/4;
     }
 }
