@@ -13,11 +13,12 @@ body {
     --colorDeFondo: rgb(30, 30, 30);
     --colorFuente: #fff;
     --colorGrey: rgb(40, 40, 40);
+    --colorBorderHistory: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 }
 
 body {
     background-color: var(--colorDeFondo);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -410,9 +411,63 @@ body {
     box-shadow: -200px 0px 5px 0px rgba(0,0,0,0.48);
 }
 
+/*ASIDES PERFIL INICIADO*/
+
+.lf__asides-menu-main-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lf__asides-menu-main-title input{
+    display: none;
+}
+.lf__asides-menu-main-title button{
+    color: #fff;
+    border-radius: 20px;
+    width: 8em;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    padding: .3em;
+    border: none;
+    font-weight: 100;
+    background-color: var(--colorGrey);
+}
+.lf__asides-menu-main-title-img{
+    padding: .3em;
+    background-color: var(--colorGrey);
+    width: min-content;
+    height: min-content;
+    border-radius: 50%;
+}
+.lf__asides-menu-main-title img{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.__asides-menu-main-body{
+    padding: 2em 0 0 0;
+}
+
+.__asides-menu-main-body .containerOfCarrousel .elementOfCarrousel .borderOfImg{
+    padding: .3em;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 87, 115);
+}
+
+.__asides-menu-main-body .containerOfCarrousel .elementOfCarrousel .borderOfImg img{
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
 .lf__desktop{
     display: none;
 }
+
 
 
 

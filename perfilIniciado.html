@@ -711,15 +711,79 @@
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>                </button>
             </div>
             <div class="__asides-menu-main">
-                <h3>Modo invitado</h3>
-                <p>Puedes <a href="register.html">Iniciar sesion</a></p>
-                <p>No tienes cuenta? <a href="register.html">Registrate aquí</a></p>
-                <hr>
+                <div class="__asides-menu-main-title">
+                    <div class="lf__asides-menu-main-title"id="perfil">
+                        <div class="lf__asides-menu-main-title-img">
+                            <img id="imagen-perfil" src="img/mensajes/pity-message.jpg" alt="Foto de perfil actual">
+                        </div>
+                        <h3>Lautaro Fernandez</h3>
+                        <input type="file" id="input-imagen" accept="image/*">
+                        <button id="cambiar-foto">Cambiar Foto</button>
+                    </div>
+                </div>
+                <div class="__asides-menu-main-body">
+                    <h4>Artistas que mas escuchas</h4>
+                    <div class="lf__section-carrousels-main">
+                        <div class="__carrousel-main-element">
+                            <div class="containerOfCarrousel">
+                                <div class="elementOfCarrousel">
+                                    <div class="borderOfImg">
+                                        <img src="img/artistas/charly-artist.jpg"alt="">
+                                    </div>
+                                    <div class="textOfElement textWhitEllipsis">
+                                        Charly Garcia
+                                    </div>
+                                </div>
+                                <div class="elementOfCarrousel">
+                                    <div class="borderOfImg">
+                                        <img src="img/artistas/spinetta-artist.jpg"alt="">
+                                    </div>
+                                    <div class="textOfElement textWhitEllipsis">
+                                        Spinetta
+                                    </div>
+                                </div>
+                                <div class="elementOfCarrousel">
+                                    <div class="borderOfImg">
+                                        <img src="img/artistas/biza-artist.jpg"alt="">
+                                    </div>
+                                    <div class="textOfElement textWhitEllipsis">
+                                        Bizarrap
+                                    </div>
+                                </div>
+                                <div class="elementOfCarrousel">
+                                    <div class="borderOfImg">
+                                        <img src="img/artistas/luca-card.jpg"alt="">
+                                    </div>
+                                    <div class="textOfElement textWhitEllipsis">
+                                        Luca Prodan
+                                    </div>
+                                </div>
+                                <div class="elementOfCarrousel">
+                                    <div class="borderOfImg">
+                                        <img src="img/artistas/iorio-reels.jpg"alt="">
+                                    </div>
+                                    <div class="textOfElement textWhitEllipsis">
+                                        Ricardo Iorio
+                                    </div>
+                                </div>
 
+                                <div class="elementOfCarrousel">
+                                    <div class="borderOfImg">
+                                        <img src="img/artistas/jmmy-reels.jpg"alt="">
+                                    </div>
+                                    <div class="textOfElement textWhitEllipsis">
+                                        Jimmy Hendrix
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <script src="index.js"></script>
+    <script src="perfilIniciado.js"></script>
     <script src="BOOTSTRAP/bootstrap.min.js"></script>
 </body>
 </html>

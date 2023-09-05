@@ -13,9 +13,11 @@ const botonesCambiarOpacidad = document.querySelectorAll(".card-btn");
           if (textoModificar.style.opacity === "1") {
             textoModificar.style.opacity = "0";
             cardBtn_img.style.opacity = "1";
+            tarjeta.style.overflow = "hidden";
           } else {
             textoModificar.style.opacity = "1";
             cardBtn_img.style.opacity = ".6";
+            tarjeta.style.overflow = "auto";
           }
         });
       });
@@ -39,7 +41,11 @@ const bandejaMenu = document.getElementsByClassName("lf__section-asides-menu")[0
 
 menuBtn.addEventListener("click", function(){
   bandejaMenu.classList.add("asides-show-menu");
+  body.style.overflow = "hidden";
+  bandejaMenu.style.overflow = "auto";
 });
 closeMenuBtn.addEventListener("click", function(){
   bandejaMenu.classList.remove("asides-show-menu");
+  body.style.overflow = "auto";
+  bandejaMenu.style.overflow = "hidden";
 });
