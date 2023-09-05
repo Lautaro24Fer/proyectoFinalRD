@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --colorDeFondo: rgb(30, 30, 30);
+    --colorFuente: #fff;
+    --colorGrey: rgb(40, 40, 40);
+}
+html, body{
+    min-height: 100vh;
+}
+body{
+    width: 100vw;
+    background-image: url(img/utilitarios/fondoFormulario.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: var(--colorDeFondo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.lf__form-container{
+    background-color: rgba(30, 30, 30, 0.833);
+    min-width: 20em;
+    min-height: 30em;
+    max-width: 25em;
+    max-height: 40em;
+    border-radius: 15px;
+    border: 3px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    color: var(--colorFuente);
+}
+.lf__form-container-header{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1.5em 0;
+}
+.lf__form-container-header svg{
+    height: 2em;
+    width: 2em;
+}
+.lf__submitButton, 
+.lf__registerButton{
+    margin: 1.5em 0 0 0;
+    background-color: var(--colorGrey);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: .5em;
+    width: 100%;
+    transition: .2s;
+}
+.lf__registerButton{
+    background-color: var(--colorDeFondo);
+    border: 2px solid var(--colorGrey);
+}
+.lf__registerForm{
+    display: none;
+    animation-duration: 0.5s; 
+    animation-fill-mode: forwards;
+}
+.lf__registerLogin{
+    animation-duration: 0.5s; 
+    animation-fill-mode: forwards;
+}
+.lf__submitButton:hover{
+    background-color: grey;
+}
+@keyframes slideRight {
+    from {
+        transform: translateX(300%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideLeft {
+    from {
+        transform: translateX(-300%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.asideRight{
+    animation-name: slideRight;
+}
+
+.asideLeft{
+    animation-name: slideLeft;
+}
+
+button a{
+    text-decoration: none;
+    font-weight: 100;
+}
+
+@media (width >=769px){
+    .lf__form-container{
+        width: 80em;
+        height: 80em;
+    }
+    .lf__submitButton{
+        margin: 3em 0 0 0;
+    }
+}
