@@ -49,3 +49,12 @@ closeMenuBtn.addEventListener("click", function(){
   body.style.overflow = "auto";
   bandejaMenu.style.overflow = "hidden";
 });
+
+//AGREGAR A CARRITO
+const btnsAgregarCarrito = document.querySelectorAll(".btn.btn-primary");
+
+btnsAgregarCarrito.forEach((boton) =>{
+  boton.addEventListener("click", function(){
+    alert("Agregado al carrito con exito!");
+  });
+});
