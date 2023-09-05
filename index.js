@@ -50,6 +50,9 @@ closeMenuBtn.addEventListener("click", function(){
   bandejaMenu.style.overflow = "hidden";
 });
 
+
+
+
 //AGREGAR A CARRITO
 const btnsAgregarCarrito = document.querySelectorAll(".btn.btn-primary");
 
@@ -58,3 +61,14 @@ btnsAgregarCarrito.forEach((boton) =>{
     alert("Agregado al carrito con exito!");
   });
 });
+
+//mensajes de funciones premium
+const btnFuncionesPremium = document.getElementById("functionPremium");
+const btnFuncionesPremium1 = document.getElementById("functionPremium1");
+btnFuncionesPremium.addEventListener("click", function(){
+  alert("Inicie sesion para ver la seccion de las compras")
+});
+btnFuncionesPremium1.addEventListener("click", function(){
+  alert("Inicie sesion para ver la seccion de los direct");
+});
+

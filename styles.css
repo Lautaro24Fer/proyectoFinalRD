@@ -375,7 +375,9 @@ body {
 
 .lf__section-asides-search.asides-show{
     top: 0;
+    
 }
+
 
 .lf__section-asides-menu{
     margin: 4em 0 0 0;
@@ -387,6 +389,11 @@ body {
     background-color: var(--colorDeFondo);
     transition: right .2s ease-out;
     z-index: 300;
+}
+
+.lf__section-asides-menu.showMessages{
+    right: 0;
+    box-shadow: -200px 0px 5px 0px rgba(0,0,0,0.48);
 }
 
 .lf__section-asides-menu .__asides-menu-main{
@@ -409,6 +416,68 @@ body {
 .lf__section-asides-menu.asides-show-menu{
     right: 0;
     box-shadow: -200px 0px 5px 0px rgba(0,0,0,0.48);
+}
+/*--bandeja de mensajes*/
+.lf-at-tl-messages-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow-y: auto;
+    padding: 0 0 10em 0;
+}
+
+.tl-mb-element {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.tl-mb-element-txt-name,
+.tl-mb-element-txt-undername-time {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.tl-mb-element-txt-undername {
+    font-size: small;
+    display: flex;
+    gap: .3em;
+}
+
+.tl-mb-element-txt-undername-msgContent {
+    min-width: 2em;
+    max-width: 9em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.tl-mb-element-txt-undername-dot svg {
+    fill: rgb(143, 255, 246);
+}
+
+.lf-at-tl-messages-body .tl-mb-element .tl-mb-element-img {
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.lf-at-tl-messages-body .tl-mb-element .tl-mb-element-img img {
+    object-fit: cover;
+    width: 5em;
+    height: 5em;
+    border-radius: 100%;
+}
+
+.tl-mb-element-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.lf-at-tl-header-messages-title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
 }
 
 /*ASIDES PERFIL INICIADO*/
@@ -462,6 +531,18 @@ body {
     width: 6em;
     border-radius: 50%;
     object-fit:cover;
+}
+.lf__section-asides-menu .lf__section-close{
+    display: flex;
+    justify-content: center;
+    margin: 4em 0 0 0;
+}
+
+.lf__section-asides-menu .lf__section-close button{
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: 900;
 }
 
 .lf__desktop{
@@ -561,5 +642,8 @@ body {
     }
     .lf__footerTag{
         grid-column: 3/4;
+    }
+    .searchBtn{
+        display: none;
     }
 }
